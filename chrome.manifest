@@ -1,0 +1,3 @@
+content  zulernia             jar:chrome/zulernia.jar!/content/
+
+overlay  chrome://pippki/content/exceptionDialog.xul  chrome://zulernia/content/zulerniaOverlay.xul

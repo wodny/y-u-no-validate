@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay >
+
+
+<overlay id="zulerniaOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://zulernia/content/zulerniaOverlay.js" />
+
+  <groupbox id="certStatusGroupBox">
+    <checkbox id="permanent" checked="false" />
+  </groupbox>
+</overlay>
