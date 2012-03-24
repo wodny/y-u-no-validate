@@ -1,8 +1,8 @@
-function ZulerniaObserver() {
+function YUNoValidateObserver() {
   this.register();
 }
 
-ZulerniaObserver.prototype = {
+YUNoValidateObserver.prototype = {
   observe: function(subject, topic, data) {
     var inPrivateBrowsing = inPrivateBrowsingMode();
     var pe = document.getElementById("permanent");
@@ -22,4 +22,4 @@ ZulerniaObserver.prototype = {
   }
 }
 
-zulernia_observer = new ZulerniaObserver();
+yunovalidate_observer = new YUNoValidateObserver();

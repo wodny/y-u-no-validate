@@ -1,2 +1,4 @@
-zulernia.xpi
-chrome/zulernia.jar
+syntax: glob
+
+src/chrome/y-u-no-validate.jar
+src/y-u-no-validate.xpi

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay >
+
+
+<overlay id="y-u-no-validateOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://y-u-no-validate/content/y-u-no-validateOverlay.js" />
+
+  <groupbox id="certStatusGroupBox">
+    <checkbox id="permanent" checked="false" />
+  </groupbox>
+</overlay>

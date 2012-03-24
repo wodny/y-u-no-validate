@@ -1,8 +1,8 @@
-zulernia.xpi: chrome/zulernia.jar chrome.manifest install.rdf
-	rm -f zulernia.xpi && zip zulernia.xpi chrome/zulernia.jar chrome.manifest install.rdf
+y-u-no-validate.xpi: chrome/y-u-no-validate.jar chrome.manifest install.rdf
+	rm -f y-u-no-validate.xpi && zip y-u-no-validate.xpi chrome/y-u-no-validate.jar chrome.manifest install.rdf
 
-chrome/zulernia.jar: chrome/content/*
-	cd chrome && rm -f zulernia.jar && zip -r zulernia.jar content
+chrome/y-u-no-validate.jar: chrome/content/*
+	cd chrome && rm -f y-u-no-validate.jar && zip -r y-u-no-validate.jar content
 
 clean:
-	rm -f zulernia.xpi && rm -f chrome/zulernia.jar
+	rm -f y-u-no-validate.xpi && rm -f chrome/y-u-no-validate.jar
