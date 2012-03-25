@@ -1,0 +1,18 @@
+Y U no validate
+===============
+
+Firefox extension. In the "Add Security Exception" dialog makes 
+"Permanently store this exception" checkbox unchecked by default.
+
+Extension
+---------
+https://addons.mozilla.org/en-US/firefox/addon/y-u-no-validate/
+
+Source
+------
+https://bitbucket.org/wodny/y-u-no-validate/overview
+
+Author
+------
+Marcin Szewczyk <Marcin.Szewczyk@wodny.org>
+http://wodny.org
