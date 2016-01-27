@@ -1,11 +1,11 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
    <Description about="urn:mozilla:install-manifest">
       <em:id>{20d36f97-15da-47ed-9f0a-13cbe85bdc84}</em:id>
-      <em:version>2013052401</em:version>
+      <em:version>2013052402</em:version>
       <em:type>2</em:type>
 
       <!-- Firefox -->
@@ -29,7 +29,7 @@
       <em:name>Y U no validate</em:name>
       <em:description>In the "Add Security Exception" dialog makes "Permanently store this exception" checkbox unchecked by default</em:description>
       <em:creator>Marcin Szewczyk</em:creator>
-      <em:homepageURL>http://wodny.org/</em:homepageURL>
+      <em:homepageURL>http://wodny.org/projects/y-u-no-validate.html</em:homepageURL>
 
    </Description>
 </RDF>

@@ -1,15 +1,22 @@
-y-u-no-validate.xpi: chrome/y-u-no-validate.jar chrome.manifest install.rdf
-	rm -f y-u-no-validate.xpi && \
-	    zip y-u-no-validate.xpi \
-	        chrome/y-u-no-validate.jar \
-		chrome.manifest \
-		install.rdf \
-		icon.png \
-		COPYING \
-		README
+VERSION:=$(shell xmlstarlet sel \
+	-N rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns\# \
+	-N em=http://www.mozilla.org/2004/em-rdf\# \
+	-t -v /rdf:RDF/rdf:Description/em:version install.rdf || echo nover)
 
-chrome/y-u-no-validate.jar: chrome/content/*
-	cd chrome && rm -f y-u-no-validate.jar && zip -r y-u-no-validate.jar content
+XPI_PREFIX:=y-u-no-validate
+XPI:=$(XPI_PREFIX)-$(VERSION).xpi
+JAR:=chrome/y-u-no-validate.jar
+
+all: $(XPI)
+
+%.xpi: $(JAR) chrome.manifest install.rdf icon.png COPYING README
+	rm -f $@
+	zip $@ $?
+
+$(JAR): chrome/content/*
+	rm -f $@
+	cd $(@D) && zip -r $(@F) content
 
 clean:
-	rm -f y-u-no-validate.xpi && rm -f chrome/y-u-no-validate.jar
+	rm -f $(XPI_PREFIX)-*.xpi
+	rm -f $(JAR)
