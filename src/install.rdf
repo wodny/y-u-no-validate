@@ -5,7 +5,7 @@
 
    <Description about="urn:mozilla:install-manifest">
       <em:id>{20d36f97-15da-47ed-9f0a-13cbe85bdc84}</em:id>
-      <em:version>2013052403</em:version>
+      <em:version>2013052407</em:version>
       <em:type>2</em:type>
 
       <!-- Firefox -->

@@ -1,3 +1,3 @@
-content  y-u-no-validate             jar:chrome/y-u-no-validate.jar!/content/
+content         y-u-no-validate                                 content/
 
-overlay  chrome://pippki/content/exceptionDialog.xul  chrome://y-u-no-validate/content/y-u-no-validateOverlay.xul
+overlay         chrome://pippki/content/exceptionDialog.xul     chrome://y-u-no-validate/content/y-u-no-validateOverlay.xul

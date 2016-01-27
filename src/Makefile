@@ -5,18 +5,12 @@ VERSION:=$(shell xmlstarlet sel \
 
 XPI_PREFIX:=y-u-no-validate
 XPI:=$(XPI_PREFIX)-$(VERSION).xpi
-JAR:=chrome/y-u-no-validate.jar
 
 all: $(XPI)
 
-%.xpi: $(JAR) chrome.manifest install.rdf icon.png COPYING README
+%.xpi: content chrome.manifest install.rdf icon.png COPYING README
 	rm -f $@
-	zip $@ $?
-
-$(JAR): chrome/content/*
-	rm -f $@
-	cd $(@D) && zip -r $(@F) content
+	zip -r $@ $?
 
 clean:
 	rm -f $(XPI_PREFIX)-*.xpi
-	rm -f $(JAR)
