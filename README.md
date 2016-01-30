@@ -11,5 +11,5 @@ Project's homepage: <http://wodny.org/projects/y-u-no-validate.html>
 
 * At addons.mozilla.org: 
   <https://addons.mozilla.org/en-US/firefox/addon/y-u-no-validate/>
-* From the Debian experimental repository:
+* From the Debian repository:
   <https://packages.debian.org/unstable/xul-ext-y-u-no-validate>
